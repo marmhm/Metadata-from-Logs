@@ -1,0 +1,4 @@
+SELECT DISTINCT  ?variable2\nWHERE\n  { ?variable1  a  ?variable2}\n & 1 & 5
+CONSTRUCT \n  { \n    ?variable2 ?predicate1 ?variable1 .\n  }\nWHERE\n  { ?variable2  ?predicate1  ?variable1}\nLIMIT   1\n & 1 & 1
+SELECT  ?variable2\nWHERE\n  { ?variable2  ?predicate1  ?variable1}\nLIMIT   1\n & 1 & 45
+CONSTRUCT \n  { \n    ?variable2 ?predicate1 ?variable1 .\n  }\nWHERE\n  { GRAPH ?g\n      { ?variable2  ?predicate1  ?variable1}}\nLIMIT   1\n & 1 & 1

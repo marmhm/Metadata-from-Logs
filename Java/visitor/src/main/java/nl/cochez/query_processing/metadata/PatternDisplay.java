@@ -124,7 +124,7 @@ public class PatternDisplay {
 		}
 
 		Collections.shuffle(valid_unique_query);
-		ArrayList<Query> random_select_50_queries = new ArrayList<Query>(valid_unique_query.subList(0, 50));
+		ArrayList<Query> random_select_50_queries = new ArrayList<Query>(valid_unique_query.subList(0, Math.min(50, valid_unique_query.size())));
 		try {
 			BufferedWriter bw_random50 = new BufferedWriter(new FileWriter("random_50_valid_unique_queries.csv",true));
 			for(Query uqf:random_select_50_queries){

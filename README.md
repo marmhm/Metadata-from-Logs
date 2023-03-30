@@ -18,9 +18,9 @@ We use python to manuplate input data:
 3. We remove spaces/new lines with a parralel programing
 4. We convert dataset to .tsv.gzip
 
-Workflow of the method is shown below:
 
-![alt text](https://github.com/marmhm/Metadata-from-logs/workflow.png)
 
-Implemantation of the workflow could be found in Java folder. 
+![Workflow of the method is shown below:](https://github.com/marmhm/Metadata-from-logs/blob/main/workflow.png)
+
+For implemantation of the workflow see Java folder. 
 

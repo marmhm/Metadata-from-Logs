@@ -1,0 +1,26 @@
+CONSTRUCT 
+  { 
+    ?s ?p ?o .
+  }
+WHERE
+  { GRAPH ?g
+      { ?s  ?p  ?o}}
+LIMIT   1
+ & 0.0
+CONSTRUCT 
+  { 
+    ?s ?p ?o .
+  }
+WHERE
+  { ?s  ?p  ?o}
+LIMIT   1
+ & 0.0
+SELECT DISTINCT  ?class
+WHERE
+  { ?x  a  ?class}
+ & 0.5
+SELECT  ?s
+WHERE
+  { ?s  ?p  ?o}
+LIMIT   1
+ & 0.0

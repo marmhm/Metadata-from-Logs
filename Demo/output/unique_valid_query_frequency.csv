@@ -1,0 +1,12 @@
+SELECT  ?s\nWHERE\n  { ?s  ?p  ?o}\nLIMIT   1\n & 45
+SELECT DISTINCT  ?class\nWHERE\n  { ?x  a  ?class}\n & 5
+CONSTRUCT \n  { \n    ?s ?p ?o .\n  }\nWHERE\n  { ?s  ?p  ?o}\nLIMIT   1\n & 1
+CONSTRUCT \n  { \n    ?s ?p ?o .\n  }\nWHERE\n  { GRAPH ?g\n      { ?s  ?p  ?o}}\nLIMIT   1\n & 1
+SELECT  ?s\nWHERE\n  { ?s  ?p  ?o}\nLIMIT   1\n & 45
+SELECT DISTINCT  ?class\nWHERE\n  { ?x  a  ?class}\n & 5
+CONSTRUCT \n  { \n    ?s ?p ?o .\n  }\nWHERE\n  { ?s  ?p  ?o}\nLIMIT   1\n & 1
+CONSTRUCT \n  { \n    ?s ?p ?o .\n  }\nWHERE\n  { GRAPH ?g\n      { ?s  ?p  ?o}}\nLIMIT   1\n & 1
+SELECT  ?s\nWHERE\n  { ?s  ?p  ?o}\nLIMIT   1\n & 45
+SELECT DISTINCT  ?class\nWHERE\n  { ?x  a  ?class}\n & 5
+CONSTRUCT \n  { \n    ?s ?p ?o .\n  }\nWHERE\n  { ?s  ?p  ?o}\nLIMIT   1\n & 1
+CONSTRUCT \n  { \n    ?s ?p ?o .\n  }\nWHERE\n  { GRAPH ?g\n      { ?s  ?p  ?o}}\nLIMIT   1\n & 1

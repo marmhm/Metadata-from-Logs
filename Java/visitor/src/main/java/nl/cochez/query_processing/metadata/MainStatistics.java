@@ -126,15 +126,19 @@ public class MainStatistics {
 	};
 
 	public static void main(String[] args) throws IOException {
+		// java -jar Demo_sample_queries.jar "endpoint" "InputData"
+		String sparqlendpoint = args[0];
+		
 		// String sparqlendpoint = "https://bio2rdf.org/sparql";
-		String sparqlendpoint = "https://query.wikidata.org/sparql";
-		String dict_name = "query_dict_wiki.index";
-		// String dict_name = "query_dict.index";
+//		String sparqlendpoint = "https://query.wikidata.org/sparql";
+//		String dict_name = "query_dict_wiki.index";
+		 String dict_name = "./query_dict.index";
 		Stopwatch watch = Stopwatch.createStarted();
-		String filename = "/home/coder/project/2017-06-12_2017-07-09_organic.tsv.gz";
+//		String filename = "/input.tsv.gz";
+		String filename = "./"+args[1];
 		// String filename = "drugbank_test.tsv.gz";
 		if (args.length > 0) {
-			filename = args[0];
+			filename = args[1];
 		}
 
 		List<String> stop_list = new ArrayList<String>();
